@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Create New Client Account</h1>
+        <form id="createClientForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="galleryUrl">Gallery URL:</label>
+            <input type="url" id="galleryUrl" name="galleryUrl" required>
+
+            <button type="submit">Create Client</button>
+        </form>
+        <p id="message"></p>
+    </main>
+    <script src="/assets/js/admin.js"></script>
+</body>
+</html>

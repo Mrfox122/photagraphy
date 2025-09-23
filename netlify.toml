@@ -1,0 +1,6 @@
+[build]
+  publish = "public"
+  command = "npm run build" # If you have a build step, otherwise, just omit
+
+[functions]
+  directory = "server/functions" # You'll need to move your server code here
