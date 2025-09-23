@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/">Fox Photography Admin</a></div>
+            <ul>
+                <li><a href="/admin-panel.html">Create Clients</a></li>
+                <li><a href="/admin-portfolio.html">Manage Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <h1>Manage Portfolio</h1>
+        <section class="upload-section">
+            <h2>Upload New Photo</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="title">Photo Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="image">Image File:</label>
+                <input type="file" id="image" name="image" required>
+                <button type="submit">Upload Photo</button>
+            </form>
+            <p id="uploadMessage"></p>
+        </section>
+
+        <section class="gallery-preview">
+            <h2>Current Portfolio Photos</h2>
+            <div id="portfolioGrid" class="gallery-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Photography Business. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/admin-portfolio.js"></script>
+</body>
+</html>
