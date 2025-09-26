@@ -4,4 +4,10 @@
 
 [functions]
   directory = "server/functions"
-  included_files = ["server/models/**"]
+  included_files = [
+    "server/models/**",
+    "server/functions/controllers/**",
+    "server/functions/config/**",
+    "server/functions/routes/**"
+    
+    ]
