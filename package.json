@@ -18,6 +18,7 @@
     "express": "^5.1.0",
     "mongoose": "^8.18.2",
     "multer": "^2.0.2",
+    "resend": "^6.1.0",
     "serverless-http": "^4.0.0"
   }
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login - Fox Photography</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">Fox Photography</a>
+            </div>
+            <ul>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/schedule.html">Schedule</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+                <li><a href="/client-login.html">Client Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-main">
+        <section class="login-header">
+            <h1>Client Login</h1>
+            <p>Access your private photo gallery below.</p>
+        </section>
+
+        <section class="login-form-section">
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" id="loginButton">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/footer.js" defer></script>
+    <script src="/assets/js/client-login.js" defer></script>
+
+</body>
+</html>

@@ -215,3 +215,20 @@ footer {
         height: 80vh;
     }
 }
+
+/* Schedule Page */
+.schedule-main {
+    padding-top: 80px; /* To account for fixed header */
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.schedule-header {
+    padding: 3rem 1rem;
+}
+
+.scheduler-container {
+    padding: 2rem 0;
+    /* Add styling for the container if needed */
+}
