@@ -2,7 +2,7 @@
 const express = require('express');
 const portfolioController = require('../controllers/portfolioController');  // correct
 const router = express.Router();
-const User = require('../models/User');  // FIX: one level up, not two
+const User = require('../../models/User');
 
 router.post('/upload', portfolioController.upload.single('image'), portfolioController.uploadImage);
 router.get('/', portfolioController.getImages);
