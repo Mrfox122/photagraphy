@@ -1,9 +1,11 @@
-
 // server/routes/auth.js
 const express = require('express');
 const bcrypt = require('bcryptjs');
-const User = require('../../models/User');
+const User = require('../../models/User'); // models folder is two levels up
 const router = express.Router();
+
+
+module.exports = router;
 
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;

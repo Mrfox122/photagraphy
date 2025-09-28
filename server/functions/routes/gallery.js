@@ -1,7 +1,9 @@
 // server/routes/gallery.js
 const express = require('express');
-const User = require('../../models/User');
 const router = express.Router();
+
+module.exports = router;
+
 
 // Route to get a client's gallery data
 router.get('/', async (req, res) => {

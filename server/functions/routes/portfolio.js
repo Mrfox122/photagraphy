@@ -1,8 +1,10 @@
 // server/routes/portfolio.js
 const express = require('express');
-const portfolioController = require('../controllers/portfolioController');  // correct
+const portfolioController = require('../controllers/portfoliocontroller'); // controllers folder
 const router = express.Router();
-const User = require('../../models/User');
+
+module.exports = router;
+
 
 router.post('/upload', portfolioController.upload.single('image'), portfolioController.uploadImage);
 router.get('/', portfolioController.getImages);

@@ -2,8 +2,11 @@
 // server/routes/admin.js
 const express = require('express');
 const bcrypt = require('bcryptjs');
-const User = require('../../models/User');
+const User = require('../../models/User'); // models folder is two levels up
 const router = express.Router();
+
+module.exports = router;
+
 
 // Route to create a new client
 router.post('/create-client', async (req, res) => {
