@@ -3,12 +3,18 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const User = require('../../models/User'); // models folder is two levels up
 const router = express.Router();
+const isMatch = await bcrypt.compare(password, user.password);
 
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
   
   // Add this line to see the data the server is receiving
   console.log('Login attempt with:', req.body);
+  console.log('Is password match?', isMatch);
+
+if (!isMatch) {
+  return res.status(400).json({ message: 'Invalid credentials.' });
+}
   
   try {
     const user = await User.findOne({ username });
