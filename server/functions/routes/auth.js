@@ -1,15 +1,15 @@
-// server/routes/auth.js
+// server/functions/routes/auth.js
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const User = require('../../models/User'); // models folder is two levels up
 const router = express.Router();
 
-
-module.exports = router;
-
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
-
+  
+  // Add this line to see the data the server is receiving
+  console.log('Login attempt with:', req.body);
+  
   try {
     const user = await User.findOne({ username });
     if (!user) {
@@ -34,4 +34,5 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// The router must be exported after the routes have been defined
 module.exports = router;
