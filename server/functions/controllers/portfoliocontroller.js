@@ -1,6 +1,6 @@
-// server/controllers/portfolioController.js
+// server/functions/controllers/portfoliocontroller.js
 const cloudinary = require('../config/cloudinary');
-const Portfolio = require('../models/Portfolio');
+const Portfolio = require('../../models/Portfolio');
 const multer = require('multer');
 
 // Set up multer for file uploads
