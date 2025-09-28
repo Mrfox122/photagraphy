@@ -2,7 +2,7 @@
 // server/routes/admin.js
 const express = require('express');
 const bcrypt = require('bcryptjs');
-const User = require('../models/User'); 
+const User = require('../models/User');  // FIX: one level up, not two
 const router = express.Router();
 
 // Route to create a new client

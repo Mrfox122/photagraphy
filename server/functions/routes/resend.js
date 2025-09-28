@@ -3,7 +3,7 @@ const express = require('express');
 const { Resend } = require('resend');
 const axios = require('axios');
 const router = express.Router();
-require('dotenv').config({ path: '../../.env' });
+require('dotenv').config({ path: '../../../.env' });
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const RECAPTCHA_SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY;
