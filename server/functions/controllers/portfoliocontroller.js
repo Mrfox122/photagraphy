@@ -1,5 +1,5 @@
 const cloudinary = require('../config/cloudinary'); // config folder under functions
-const Portfolio = require('../../models/Portfolio'); // models folder one level above functions
+const Portfolio = require('../../models/portfolio'); // models folder one level above functions
 const multer = require('multer');
 
 // Multer setup
