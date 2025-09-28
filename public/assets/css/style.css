@@ -257,3 +257,111 @@ footer {
     padding: 2rem 0;
     /* Add styling for the container if needed */
 }
+
+/* Contact Form Styling */
+.contact-main {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form-section {
+    padding: 3rem 1rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 2rem;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#contactForm .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+.send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+.contact-details {
+    flex: 1;
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.details-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.details-group p {
+    margin: 0;
+}
+
+.icon-placeholder {
+    font-size: 1.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
